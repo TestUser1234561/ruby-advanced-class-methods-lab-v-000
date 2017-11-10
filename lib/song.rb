@@ -16,8 +16,10 @@ class Song
     return obj
   end
 
-  def self.new_by_name
-
+  def self.new_by_name(name)
+    obj = Song.new
+    obj.name = name
+    return object
   end
 
 end
