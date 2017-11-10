@@ -64,4 +64,8 @@ class Song
     return obj
   end
 
+  def self.destroy_all
+    @@all.clear
+  end
+
 end
