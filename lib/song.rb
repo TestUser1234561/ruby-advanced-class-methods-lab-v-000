@@ -23,7 +23,10 @@ class Song
   end
 
   def self.create_by_name(name)
-
+    obj = Song.new
+    obj.name = name
+    @@all << obj
+    return obj
   end
 
 end
