@@ -60,6 +60,7 @@ class Song
     obj = Song.new
     obj.name = name[1]
     obj.artist_name = name[0]
+    @@all << obj
     return obj
   end
 
