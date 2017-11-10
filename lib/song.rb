@@ -43,7 +43,7 @@ class Song
     object.name = name
     @@all << object
     return object
-    
+
   end
 
 end
