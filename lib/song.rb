@@ -50,7 +50,7 @@ class Song
     name = name.split(" - ")
     obj = Song.new
     obj.name = name[0]
-    obj.artist = name[1]
+    obj.artist_name = name[1]
     return obj
   end
 
