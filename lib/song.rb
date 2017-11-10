@@ -42,7 +42,7 @@ class Song
   end
 
   def alphabetical
-    return @@all.sort_by {|o| object.name}
+    return @@all.sort_by {|o| o.name}
   end
 
 end
