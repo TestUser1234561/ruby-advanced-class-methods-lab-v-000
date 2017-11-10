@@ -49,8 +49,8 @@ class Song
     name = name.chomp(".mp3")
     name = name.split(" - ")
     obj = Song.new
-    obj.name = name[0]
-    obj.artist_name = name[1]
+    obj.name = name[1]
+    obj.artist_name = name[2]
     return obj
   end
 
