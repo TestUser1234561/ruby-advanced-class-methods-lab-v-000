@@ -39,11 +39,7 @@ class Song
       return object
     end
 
-    object = Song.new
-    object.name = name
-    @@all << object
-    return object
-
+    self.create_by_name(name)
   end
 
 end
