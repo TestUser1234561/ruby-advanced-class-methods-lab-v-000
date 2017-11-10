@@ -38,7 +38,6 @@ class Song
     if(object.is_a? Song)
       return object
     end
-
     self.create_by_name(name)
   end
 
