@@ -41,6 +41,8 @@ class Song
     self.create_by_name(name)
   end
 
-  
+  def alphabetical
+    return @@all.sort
+  end
 
 end
