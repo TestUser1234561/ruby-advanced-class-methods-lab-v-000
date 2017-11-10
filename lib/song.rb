@@ -55,7 +55,12 @@ class Song
   end
 
   def self.create_from_filename(name)
-
+    name = name.chomp(".mp3")
+    name = name.split(" - ")
+    obj = Song.new
+    obj.name = name[1]
+    obj.artist_name = name[0]
+    return obj
   end
 
 end
