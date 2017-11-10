@@ -34,7 +34,16 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
+    object = @@all.detect { |o| o.name == name }
+    if(object.is_a? Song)
+      return object
+    end
 
+    object = Song.new
+    object.name = name
+    @@all << object
+    return object
+    
   end
 
 end
